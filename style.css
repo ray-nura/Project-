@@ -1,0 +1,60 @@
+/* 
+-primary-color: #79589F;
+  --secondary-color: #6e5baa;
+*/
+img {
+    width: 100px;
+}
+body, *, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main {
+    background: #79589F;
+        
+}
+h1{
+    padding-bottom: 5px;
+}
+.menu h1{
+   display: flex;
+   justify-content: start;
+    color: #fff;
+}
+.menu li {
+    display: inline;
+    float: right;
+    padding: 10px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header {
+color: #fff;
+display: flex;
+flex-direction: row;
+padding: 40px;
+}
+.right, .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+.right {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.right input {
+    border: none;
+    border-bottom: 1px solid #ccc ;
+}
+.statics{
+    background: #fff;
+} 

@@ -8,7 +8,6 @@ body, *, main {
     box-sizing: border-box;
     line-height: 1.5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
-
 }
 li {
     list-style: none;
@@ -43,6 +42,7 @@ h1 {
 header {
     background: #79589F;
     color: #fff;
+    padding: 5px 200px;
 }
 .menu h1{
    display: inline;
@@ -62,7 +62,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 10px;
+    padding: 30px 200px;
 }
 .right, .left {
     display: flex;
@@ -87,9 +87,10 @@ header {
     background: #fff ;
     text-align: center;
     color: #363945;
+    padding: 30px 200px;
 } 
 .statistics p {
-    width: 45%;
+    width: 50%;
     margin: auto;
 }
 .icons {
@@ -99,43 +100,47 @@ header {
 } 
 .icons i {
     font-size: 50px;
+    color: #363945;
 }
 .middle .card{
-    width: 40%;
+    width: 30%;
     margin: 30px;
     padding: 20px 10px;
     float: right;
 }
 .middle img {
     float: left;
-    width: 50%;
+    width: 60%;
     margin: 10px;
 }
-.cloud {
+.cloud, .features, .platform {
     background: #79589F;
-    padding: 20px;
+    padding: 30px 200px;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-.cloud div {
+.cloud div, .features div, .platform div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
-.cloud img {
-    width: 40%;
+.cloud img, .features img, .platform img {
+    max-width: 40%;
+    max-height: 250px;
 }
-.cloud h1 {
-    font-size: 40px;
+.cloud h1, .features h1, .platform h1 {
+    font-size: 50px;
 }
 .cloud .btn {
     background-color: #301550;
     border: none;
 }
 .languages {
+    padding: 10px 200px;
     color: #363945;
     text-align: center;
 }
@@ -148,12 +153,53 @@ footer {
     background: #301550;
     color: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-size: small;
-    padding: 30px 10px;
+    padding: 30px 200px;
 }
 footer i {
     font-size: 25px;
     padding: 5px;
+}
+/*  features page  */
+
+.platform {
+    background: #ccc;
+    color: #363945;
+}
+.services {
+    padding: 30px 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+/*   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-gap: 20px;
+}
+.services .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.services .icons {
+    padding-right: 10px;
+}
+.top {
+    grid-column: 1/4;
+}
+.center {
+    grid-column: 1/3;
+}
+.side {
+    grid-column: 3/4;
+}
+.bottom-1 {
+    grid-column: 1/2;
+}
+.bottom-2 {
+    grid-column: 2/3;
+}
+.bottom-3 {
+    grid-column: 3/4;
 }
